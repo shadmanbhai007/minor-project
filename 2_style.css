@@ -1,0 +1,283 @@
+@font-face {
+    font-family: baba;
+    src: url(7.woff2);
+}
+@font-face {
+    font-family: bro ;
+    src: url(6.woff2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "bro";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#first-page {
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+#first-page video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-material {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    z-index:11 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    padding:3vh 3vw;
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100
+}
+h1{
+    font-family: "baba";
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+
+}
+#page1-material h1 span{
+    font-family: "baba";
+}
+#mouse{
+    height: 7vw;
+    width: 7vw;
+    background-color:#FF5F38; 
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+    transform: scale(0);
+    opacity: 0;
+}
+#mouse h5 {
+    font-size: 1.16vw;
+}
+#second-page{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+}
+#second-page{
+    background-color: white;
+}
+#paragraph{
+    font-size: 3vw;
+    text-align: center;
+    line-height: 3.5vw;
+    margin-top: 2vw;
+    font-family: 'baba';
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+#navb{
+    display: flex;
+    justify-content: space-between;
+    height: 10vw;
+    align-items: flex-end;
+    padding-bottom: 2vh;
+    padding-left: 4vh ;
+    padding-right: 4vh;
+    border-bottom: 2px solid rgba(23, 5, 5, 0.178);
+}
+#nav1{
+    font-weight: 100
+}
+#third-page{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+#page3-up{
+   
+    text-align: center;
+}
+#page3-up h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#page3-up h4 span{
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+#page3-up h2{
+    font-size: 4vw;
+    font-weight: 50;
+}
+#page3-mat{
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:8vw;
+
+}
+.box{
+    height: 100%;
+    width: 32.6%;
+    position: relative;
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 1s;
+}
+.box:hover img{
+    opacity: 0;
+}
+#fourth-content{
+    color: rgba(0, 0, 0, 0.582);
+    margin-top: 10vw;
+    height: 4.5vw;
+    width: 96%;
+    border-bottom: 2px solid gray;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    margin-left: 2%;
+}
+#para2{
+    margin-top: 3vw;
+    font-family: "bro";
+    font-size: 4vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+#blur{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+#blur video{
+    height: 100%;
+}
+#blur svg{
+    position: absolute;
+    height: 64.8%;
+}
+#mouse2{
+    height: 7vw;
+    width: 7vw;
+    background-color: black; /*#FF5F38 */
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+    transform: scale(0);
+    opacity: 0;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    padding: 3.9vw 0;
+    position: relative;
+}
+#page5 h1{
+    font-size: 10vw;
+    font-family: "baba";
+    font-weight: 100;
+    border-bottom: 1.1px solid #000000;
+    width: 96%;
+    margin-left: 2%;
+
+}
+
+#slider{
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:8vw;
+
+}
+.box1{
+    height: 100%;
+    width: 32.6%;
+    position: relative;
+}
+
+.box1 img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 1s;
+}
+#page6{
+    height: 40vh;
+    width: 100%;
+    margin-top: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    font-size: "bro";
+    line-height: 3vw;
+}
